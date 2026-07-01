@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web oficial de {{ nombre_jugador }} - Lateral por izquierda y Segundo marcador central. Trayectoria, estadísticas y contacto.">
+    <title>{{ nombre_jugador }} | Futbolista Profesional</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AC<span>9</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                <a href="#trayectoria" class="nav-link">Trayectoria</a>
+                <a href="#videos" class="nav-link">Videos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text animate-fade-in">
+                <div class="badge">Disponible para Fichaje</div>
+                <h1 class="hero-title">{{ nombre_jugador }}</h1>
+                <p class="hero-subtitle">Lateral Izquierdo &amp; Segundo Marcador Central</p>
+                <p class="hero-desc">
+                    Defensor con gran despliegue físico, solidez defensiva, visión táctica y polivalencia para desempeñarse tanto de lateral como en la zaga central.
+                </p>
+                <div class="hero-club">
+                    <i data-lucide="shield" class="club-icon"></i>
+                    <span>Club Actual: <strong>Sp. Belgrano La Para (2026)</strong></span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">
+                        <i data-lucide="mail"></i> Contactar
+                    </a>
+                    <a href="#trayectoria" class="btn btn-secondary">
+                        <i data-lucide="briefcase"></i> Ver Trayectoria
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-card-container animate-slide-in">
+                <!-- Virtual Player Card / Modern Graphic representation of stats -->
+                <div class="player-card">
+                    <div class="card-glow"></div>
+                    <div class="card-inner">
+                        <div class="card-top">
+                            <div class="card-meta">
+                                <span class="card-rating">36</span>
+                                <span class="card-pos">DF</span>
+                            </div>
+                            <div class="card-player-pic">
+                                <img src="profile.png" alt="{{ nombre_jugador }}" class="player-img">
+                            </div>
+                        </div>
+                        <div class="card-name">{{ nombre_jugador }}</div>
+                        <div class="card-details">
+                            <div class="card-stat">
+                                <span class="stat-lbl">EDAD</span>
+                                <span class="stat-val">36</span>
+                            </div>
+                            <div class="card-stat">
+                                <span class="stat-lbl">ALT</span>
+                                <span class="stat-val">1.75m</span>
+                            </div>
+                            <div class="card-stat">
+                                <span class="stat-lbl">PESO</span>
+                                <span class="stat-val">78kg</span>
+                            </div>
+                            <div class="card-stat">
+                                <span class="stat-lbl">PERFIL</span>
+                                <span class="stat-val">Izquierdo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Summary -->
+    <section class="quick-stats">
+        <div class="container grid-stats">
+            <div class="stat-box animate-box">
+                <i data-lucide="user"></i>
+                <div class="stat-info">
+                    <h3>36 Años</h3>
+                    <p>Edad (03/03/1990)</p>
+                </div>
+            </div>
+            <div class="stat-box animate-box">
+                <i data-lucide="ruler"></i>
+                <div class="stat-info">
+                    <h3>1,75 m</h3>
+                    <p>Estatura</p>
+                </div>
+            </div>
+            <div class="stat-box animate-box">
+                <i data-lucide="scale"></i>
+                <div class="stat-info">
+                    <h3>78 kg</h3>
+                    <p>Peso Corporal</p>
+                </div>
+            </div>
+            <div class="stat-box animate-box">
+                <i data-lucide="navigation"></i>
+                <div class="stat-info">
+                    <h3>Polivalente</h3>
+                    <p>Lateral / Central</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about-section">
+        <div class="container">
+            <div class="section-header text-center animate-box">
+                <span class="sub-title">Perfil Deportivo</span>
+                <h2 class="section-title">Características Sobre Mí</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text animate-box">
+                    <p class="lead-text">
+                        Como defensor zurdo con amplia experiencia, me destaco por mi versatilidad táctica y mi compromiso con el juego colectivo.
+                    </p>
+                    <p>
+                        A lo largo de mi trayectoria he alternado con éxito la posición de lateral por izquierda, aportando proyección controlada, solidez en el mano a mano y centros precisos, con el puesto de segundo marcador central, donde hago valer mi sentido de ubicación, velocidad de anticipación y salida limpia por bajo.
+                    </p>
+                    <div class="personal-info-list">
+                        <div class="info-item"><strong>Nacimiento:</strong> 03/03/1990</div>
+                        <div class="info-item"><strong>Nacionalidad:</strong> Argentina</div>
+                        <div class="info-item"><strong>Posición Principal:</strong> Lateral Izquierdo</div>
+                        <div class="info-item"><strong>Posición Secundaria:</strong> Segundo Marcador Central</div>
+                        <div class="info-item"><strong>Perfil hábil:</strong> Zurdo</div>
+                        <div class="info-item"><strong>Club Actual:</strong> Sp. Belgrano La Para</div>
+                    </div>
+                </div>
+
+                <div class="about-skills animate-box">
+                    <h3 class="skills-title">Atributos Clave</h3>
+                    
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-lbl">
+                            <span>Marcación e Intercepción</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-lbl">
+                            <span>Lectura Táctica / Anticipación</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-lbl">
+                            <span>Juego Aéreo</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-lbl">
+                            <span>Proyección y Centros</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-lbl">
+                            <span>Liderazgo y Voz de Mando</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trayectoria Section -->
+    <section id="trayectoria" class="trayectoria-section">
+        <div class="container">
+            <div class="section-header text-center animate-box">
+                <span class="sub-title">Mi Carrera</span>
+                <h2 class="section-title">Trayectoria Profesional</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item animate-box left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2026</span>
+                        <h3 class="club-title">Sp. Belgrano La Para</h3>
+                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
+                        <p class="role-desc">Referente defensivo y capitán del equipo, liderando la zaga central y la banda izquierda.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item animate-box right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h3 class="club-title">Atl. Miramar</h3>
+                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF) - Torneo Absoluto</p>
+                        <p class="role-desc">Refuerzo clave para afrontar el Torneo Absoluto de la liga regional.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item animate-box left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2014 - 2023</span>
+                        <h3 class="club-title">Sp. Belgrano La Para</h3>
+                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
+                        <p class="role-desc">Ciclo histórico de 9 años de gran regularidad, consolidación y múltiples campeonatos/competencias locales.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item animate-box right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2013 - 2014</span>
+                        <h3 class="club-title">Pacífico de Alvear</h3>
+                        <p class="league-info">Torneo Argentino B</p>
+                        <p class="role-desc">Experiencia federal compitiendo a nivel nacional en una de las ligas más físicas y competitivas del país.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item animate-box left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2013</span>
+                        <h3 class="club-title">Sp. Belgrano La Para</h3>
+                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
+                        <p class="role-desc">Paso importante para afianzar minutos en primera división en la exigente liga regional cordobesa.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item animate-box right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2012</span>
+                        <h3 class="club-title">Atl. Policial de Catamarca</h3>
+                        <p class="league-info">Torneo Argentino B</p>
+                        <p class="role-desc">Paso por el histórico club catamarqueño sumando experiencia valiosa en torneos del Consejo Federal.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 7 -->
+                <div class="timeline-item animate-box left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2011 - 2012</span>
+                        <h3 class="club-title">Talleres de Córdoba</h3>
+                        <p class="league-info">Torneo Argentino A</p>
+                        <p class="role-desc">Inicio de carrera en una institución gigante del interior del país, formando parte de su plantel en el Torneo Argentino A.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="videos-section">
+        <div class="container">
+            <div class="section-header text-center animate-box">
+                <span class="sub-title">En Acción</span>
+                <h2 class="section-title">Mejores Jugadas y Highlights</h2>
+                <div class="title-bar"></div>
+            </div>
+            
+            <div class="video-container-wrapper animate-box">
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/{{ video_id }}" title="{{ titulo_video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="video-info text-center">
+                    <h3>{{ titulo_video }}</h3>
+                    <p>{{ descripcion_video }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center animate-box">
+                <span class="sub-title">Contacto</span>
+                <h2 class="section-title">¿Interesado en mi Perfil?</h2>
+                <div class="title-bar"></div>
+                <p class="contact-subtitle text-center">
+                    Estoy disponible para propuestas deportivas, entrenamientos de alta competencia, proyectos futbolísticos e invitaciones a pruebas o torneos.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Cards -->
+                <div class="contact-card animate-box">
+                    <i data-lucide="phone" class="contact-card-icon"></i>
+                    <h3>Contacto Directo</h3>
+                    <p>Hablemos directamente para propuestas deportivas inmediatas.</p>
+                    <a href="https://wa.me/5493575417481?text=Hola%20Ariel,%20vi%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" class="contact-link whatsapp-btn">
+                        <i data-lucide="message-square"></i> WhatsApp: 3575417481
+                    </a>
+                </div>
+
+                <div class="contact-card animate-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-card-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    <h3>Redes Sociales</h3>
+                    <p>Seguí mi día a día, entrenamientos y novedades futbolísticas.</p>
+                    <a href="https://instagram.com/arielcordoba9" target="_blank" rel="noopener noreferrer" class="contact-link instagram-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> @arielcordoba9
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 {{ nombre_jugador }}. Todos los derechos reservados.</p>
+            <p class="footer-design">Diseño Profesional para Deportistas de Alto Rendimiento</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
