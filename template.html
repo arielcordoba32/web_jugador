@@ -41,13 +41,13 @@
             <div class="hero-text animate-fade-in">
                 <div class="badge">Disponible para Fichaje</div>
                 <h1 class="hero-title">{{ nombre_jugador }}</h1>
-                <p class="hero-subtitle">Lateral Izquierdo &amp; Segundo Marcador Central</p>
+                <p class="hero-subtitle">{{ posicion }} &amp; {{ segunda_posicion }}</p>
                 <p class="hero-desc">
                     Defensor con gran despliegue físico, solidez defensiva, visión táctica y polivalencia para desempeñarse tanto de lateral como en la zaga central.
                 </p>
                 <div class="hero-club">
                     <i data-lucide="shield" class="club-icon"></i>
-                    <span>Club Actual: <strong>Sp. Belgrano La Para (2026)</strong></span>
+                    <span>Club Actual: <strong>{{ club_actual }}</strong></span>
                 </div>
                 <div class="hero-actions">
                     <a href="#contacto" class="btn btn-primary">
@@ -66,7 +66,7 @@
                     <div class="card-inner">
                         <div class="card-top">
                             <div class="card-meta">
-                                <span class="card-rating">36</span>
+                                <span class="card-rating">{{ edad }}</span>
                                 <span class="card-pos">DF</span>
                             </div>
                             <div class="card-player-pic">
@@ -77,19 +77,19 @@
                         <div class="card-details">
                             <div class="card-stat">
                                 <span class="stat-lbl">EDAD</span>
-                                <span class="stat-val">36</span>
+                                <span class="stat-val">{{ edad }}</span>
                             </div>
                             <div class="card-stat">
                                 <span class="stat-lbl">ALT</span>
-                                <span class="stat-val">1.75m</span>
+                                <span class="stat-val">{{ altura }}</span>
                             </div>
                             <div class="card-stat">
                                 <span class="stat-lbl">PESO</span>
-                                <span class="stat-val">78kg</span>
+                                <span class="stat-val">{{ peso }}</span>
                             </div>
                             <div class="card-stat">
                                 <span class="stat-lbl">PERFIL</span>
-                                <span class="stat-val">Izquierdo</span>
+                                <span class="stat-val">{{ perfil_habil }}</span>
                             </div>
                         </div>
                     </div>
@@ -104,29 +104,29 @@
             <div class="stat-box animate-box">
                 <i data-lucide="user"></i>
                 <div class="stat-info">
-                    <h3>36 Años</h3>
-                    <p>Edad (03/03/1990)</p>
+                    <h3>{{ edad }} Años</h3>
+                    <p>Edad ({{ fecha_nacimiento }})</p>
                 </div>
             </div>
             <div class="stat-box animate-box">
                 <i data-lucide="ruler"></i>
                 <div class="stat-info">
-                    <h3>1,75 m</h3>
+                    <h3>{{ altura }}</h3>
                     <p>Estatura</p>
                 </div>
             </div>
             <div class="stat-box animate-box">
                 <i data-lucide="scale"></i>
                 <div class="stat-info">
-                    <h3>78 kg</h3>
+                    <h3>{{ peso }}</h3>
                     <p>Peso Corporal</p>
                 </div>
             </div>
             <div class="stat-box animate-box">
                 <i data-lucide="navigation"></i>
                 <div class="stat-info">
-                    <h3>Polivalente</h3>
-                    <p>Lateral / Central</p>
+                    <h3>{{ posicion }}</h3>
+                    <p>{{ segunda_posicion }}</p>
                 </div>
             </div>
         </div>
@@ -150,67 +150,29 @@
                         A lo largo de mi trayectoria he alternado con éxito la posición de lateral por izquierda, aportando proyección controlada, solidez en el mano a mano y centros precisos, con el puesto de segundo marcador central, donde hago valer mi sentido de ubicación, velocidad de anticipación y salida limpia por bajo.
                     </p>
                     <div class="personal-info-list">
-                        <div class="info-item"><strong>Nacimiento:</strong> 03/03/1990</div>
-                        <div class="info-item"><strong>Nacionalidad:</strong> Argentina</div>
-                        <div class="info-item"><strong>Posición Principal:</strong> Lateral Izquierdo</div>
-                        <div class="info-item"><strong>Posición Secundaria:</strong> Segundo Marcador Central</div>
-                        <div class="info-item"><strong>Perfil hábil:</strong> Zurdo</div>
-                        <div class="info-item"><strong>Club Actual:</strong> Sp. Belgrano La Para</div>
+                        <div class="info-item"><strong>Nacimiento:</strong> {{ fecha_nacimiento }}</div>
+                        <div class="info-item"><strong>Nacionalidad:</strong> {{ nacionalidad }}</div>
+                        <div class="info-item"><strong>Posición Principal:</strong> {{ posicion }}</div>
+                        <div class="info-item"><strong>Posición Secundaria:</strong> {{ segunda_posicion }}</div>
+                        <div class="info-item"><strong>Perfil hábil:</strong> {{ perfil_habil }}</div>
+                        <div class="info-item"><strong>Club Actual:</strong> {{ club_actual }}</div>
                     </div>
                 </div>
 
                 <div class="about-skills animate-box">
                     <h3 class="skills-title">Atributos Clave</h3>
                     
+                    {% for atributo in atributos_claves %}
                     <div class="skill-bar-wrapper">
                         <div class="skill-lbl">
-                            <span>Marcación e Intercepción</span>
-                            <span>90%</span>
+                            <span>{{ atributo.nombre }}</span>
+                            <span>{{ atributo.valor }}%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%;"></div>
+                            <div class="skill-fill" style="width: {{ atributo.valor }}%;"></div>
                         </div>
                     </div>
-
-                    <div class="skill-bar-wrapper">
-                        <div class="skill-lbl">
-                            <span>Lectura Táctica / Anticipación</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 88%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-wrapper">
-                        <div class="skill-lbl">
-                            <span>Juego Aéreo</span>
-                            <span>82%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 82%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-wrapper">
-                        <div class="skill-lbl">
-                            <span>Proyección y Centros</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar-wrapper">
-                        <div class="skill-lbl">
-                            <span>Liderazgo y Voz de Mando</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 92%;"></div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -227,82 +189,17 @@
 
             <!-- Timeline -->
             <div class="timeline">
-                <!-- Timeline Item 1 -->
-                <div class="timeline-item animate-box left">
+                {% for item in trayectoria %}
+                <div class="timeline-item animate-box {{ loop.cycle('left', 'right') }}">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-year">2026</span>
-                        <h3 class="club-title">Sp. Belgrano La Para</h3>
-                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
-                        <p class="role-desc">Referente defensivo y capitán del equipo, liderando la zaga central y la banda izquierda.</p>
+                        <span class="timeline-year">{{ item.periodo }}</span>
+                        <h3 class="club-title">{{ item.club }}</h3>
+                        <p class="league-info">{{ item.liga }}</p>
+                        <p class="role-desc">{{ item.descripcion }}</p>
                     </div>
                 </div>
-
-                <!-- Timeline Item 2 -->
-                <div class="timeline-item animate-box right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2025</span>
-                        <h3 class="club-title">Atl. Miramar</h3>
-                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF) - Torneo Absoluto</p>
-                        <p class="role-desc">Refuerzo clave para afrontar el Torneo Absoluto de la liga regional.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 3 -->
-                <div class="timeline-item animate-box left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2014 - 2023</span>
-                        <h3 class="club-title">Sp. Belgrano La Para</h3>
-                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
-                        <p class="role-desc">Ciclo histórico de 9 años de gran regularidad, consolidación y múltiples campeonatos/competencias locales.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 4 -->
-                <div class="timeline-item animate-box right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2013 - 2014</span>
-                        <h3 class="club-title">Pacífico de Alvear</h3>
-                        <p class="league-info">Torneo Argentino B</p>
-                        <p class="role-desc">Experiencia federal compitiendo a nivel nacional en una de las ligas más físicas y competitivas del país.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 5 -->
-                <div class="timeline-item animate-box left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2013</span>
-                        <h3 class="club-title">Sp. Belgrano La Para</h3>
-                        <p class="league-info">Liga Regional de Fútbol San Francisco (LRFSF)</p>
-                        <p class="role-desc">Paso importante para afianzar minutos en primera división en la exigente liga regional cordobesa.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 6 -->
-                <div class="timeline-item animate-box right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2012</span>
-                        <h3 class="club-title">Atl. Policial de Catamarca</h3>
-                        <p class="league-info">Torneo Argentino B</p>
-                        <p class="role-desc">Paso por el histórico club catamarqueño sumando experiencia valiosa en torneos del Consejo Federal.</p>
-                    </div>
-                </div>
-
-                <!-- Timeline Item 7 -->
-                <div class="timeline-item animate-box left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2011 - 2012</span>
-                        <h3 class="club-title">Talleres de Córdoba</h3>
-                        <p class="league-info">Torneo Argentino A</p>
-                        <p class="role-desc">Inicio de carrera en una institución gigante del interior del país, formando parte de su plantel en el Torneo Argentino A.</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
