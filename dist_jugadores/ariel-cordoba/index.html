@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sitio web oficial de {{ nombre_jugador }} - Lateral por izquierda y Segundo marcador central. Trayectoria, estadísticas y contacto."
+      content="Sitio web oficial de Ariel Córdoba - Lateral por izquierda y Segundo marcador central. Trayectoria, estadísticas y contacto."
     />
-    <title>{{ nombre_jugador }} | Futbolista Profesional</title>
+    <title>Ariel Córdoba | Futbolista Profesional</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <header class="navbar">
       <div class="nav-container">
-        <a href="#" class="logo">{{ iniciales }}<span>{{ numero_camiseta }}</span></a>
+        <a href="#" class="logo">AC<span>3</span></a>
         <nav class="nav-menu" id="navMenu">
           <a href="#inicio" class="nav-link active">Inicio</a>
           <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
@@ -49,16 +49,16 @@
         <div class="container hero-content">
           <div class="hero-text animate-fade-in">
             <div class="badge">Disponible para Fichaje</div>
-            <h1 class="hero-title">{{ nombre_jugador }}</h1>
+            <h1 class="hero-title">Ariel Córdoba</h1>
             <p class="hero-subtitle">
-              <span>{{ posicion }}{% if segunda_posicion and segunda_posicion|trim != "" %} | {{ segunda_posicion }}{% endif %}</span>
+              <span>Defensor Central | Lateral Izquierdo</span>
             </p>
             <p class="hero-desc">
-              <p style="margin-bottom: 2rem;">{{ descripcion_personal }}</p>
+              <p style="margin-bottom: 2rem;">Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.</p>
             </p>
             <div class="hero-club">
               <i data-lucide="shield" class="club-icon"></i>
-              <span>Club Actual: <strong>{{ club_actual }}</strong></span>
+              <span>Club Actual: <strong>Sportivo Belgrano La Para</strong></span>
             </div>
             <div class="hero-actions">
               <a href="#contacto" class="btn btn-primary">
@@ -77,34 +77,34 @@
               <div class="card-inner">
                 <div class="card-top">
                   <div class="card-meta">
-                    <span class="card-rating">{{ edad }}</span>
+                    <span class="card-rating">36 años</span>
                     <span class="card-pos">DF</span>
                   </div>
                   <div class="card-player-pic">
                     <img 
-                        src="{{ foto_perfil }}"
-                        alt="Foto de {{ nombre_jugador }}"
+                        src="profile.png"
+                        alt="Foto de Ariel Córdoba"
                         class="player-img"
                     />
                   </div>
                 </div>
-                <div class="card-name">{{ nombre_jugador }}</div>
+                <div class="card-name">Ariel Córdoba</div>
                 <div class="card-details">
                   <div class="card-stat">
                     <span class="stat-lbl">EDAD</span>
-                    <span class="stat-val">{{ edad }}</span>
+                    <span class="stat-val">36 años</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">ALT</span>
-                    <span class="stat-val">{{ altura }}</span>
+                    <span class="stat-val">1.78 m</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">PESO</span>
-                    <span class="stat-val">{{ peso }}</span>
+                    <span class="stat-val">76 kg</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">PERFIL</span>
-                    <span class="stat-val">{{ perfil_habil }}</span>
+                    <span class="stat-val">Izquierdo</span>
                   </div>
                 </div>
               </div>
@@ -119,29 +119,29 @@
           <div class="stat-box animate-box">
             <i data-lucide="user"></i>
             <div class="stat-info">
-              <h3>{{ edad }} Años</h3>
-              <p>Edad ({{ fecha_nacimiento }})</p>
+              <h3>36 años Años</h3>
+              <p>Edad (03/03/1990)</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="ruler"></i>
             <div class="stat-info">
-              <h3>{{ altura }}</h3>
+              <h3>1.78 m</h3>
               <p>Estatura</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="scale"></i>
             <div class="stat-info">
-              <h3>{{ peso }}</h3>
+              <h3>76 kg</h3>
               <p>Peso Corporal</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="navigation"></i>
             <div class="stat-info">
-              <h3>{{ posicion }}</h3>
-              <p>{{ segunda_posicion }}</p>
+              <h3>Defensor Central</h3>
+              <p>Lateral Izquierdo</p>
             </div>
           </div>
         </div>
@@ -159,26 +159,26 @@
           <div class="about-grid">
           
           <div class="about-text animate-box">
-            <p>{{ descripcion_personal }}</p>
+            <p>Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.</p>
             
             <div class="personal-info-list" style="margin-top: 20px;">
               <div class="info-item">
-                <strong>Nacimiento:</strong> {{ fecha_nacimiento }}
+                <strong>Nacimiento:</strong> 03/03/1990
               </div>
               <div class="info-item">
-                <strong>Nacionalidad:</strong> {{ nacionalidad }}
+                <strong>Nacionalidad:</strong> Argentina
               </div>
               <div class="info-item">
-                <strong>Posición Principal:</strong> {{ posicion }}
+                <strong>Posición Principal:</strong> Defensor Central
               </div>
               <div class="info-item">
-                <strong>Posición Secundaria:</strong> {{ segunda_posicion }}
+                <strong>Posición Secundaria:</strong> Lateral Izquierdo
               </div>
               <div class="info-item">
-                <strong>Perfil hábil:</strong> {{ perfil_habil }}
+                <strong>Perfil hábil:</strong> Izquierdo
               </div>
               <div class="info-item">
-                <strong>Club Actual:</strong> {{ club_actual }}
+                <strong>Club Actual:</strong> Sportivo Belgrano La Para
               </div>
             </div>
           </div>
@@ -186,17 +186,57 @@
           <div style="flex: 1; min-width: 300px;">
             <h3 class="skills-title" style="margin-top: 0; margin-bottom: 20px;">Atributos Clave</h3>
             
-            {% for skill in atributos_claves %}
+            
             <div class="skill-progress" style="margin-bottom: 1.5rem;">
               <div class="skill-info" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; font-weight: 500;">
-                <span>{{ skill.nombre }}</span>
-                <span>{{ skill.porcentaje }}</span>
+                <span>Marcación e intercepción</span>
+                <span>90%</span>
               </div>
               <div class="progress-bg" style="background: rgba(255, 255, 255, 0.1); border-radius: 4px; height: 6px; width: 100%;">
-                <div class="progress-bar dinamic-bar" data-width="{{ skill.porcentaje }}" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
+                <div class="progress-bar dinamic-bar" data-width="90%" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
               </div>
             </div>
-            {% endfor %}
+            
+            <div class="skill-progress" style="margin-bottom: 1.5rem;">
+              <div class="skill-info" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; font-weight: 500;">
+                <span>Lectura táctica / Anticipación</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-bg" style="background: rgba(255, 255, 255, 0.1); border-radius: 4px; height: 6px; width: 100%;">
+                <div class="progress-bar dinamic-bar" data-width="88%" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-progress" style="margin-bottom: 1.5rem;">
+              <div class="skill-info" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; font-weight: 500;">
+                <span>Juego aéreo</span>
+                <span>82%</span>
+              </div>
+              <div class="progress-bg" style="background: rgba(255, 255, 255, 0.1); border-radius: 4px; height: 6px; width: 100%;">
+                <div class="progress-bar dinamic-bar" data-width="82%" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-progress" style="margin-bottom: 1.5rem;">
+              <div class="skill-info" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; font-weight: 500;">
+                <span>Proyección y centros</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bg" style="background: rgba(255, 255, 255, 0.1); border-radius: 4px; height: 6px; width: 100%;">
+                <div class="progress-bar dinamic-bar" data-width="85%" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
+              </div>
+            </div>
+            
+            <div class="skill-progress" style="margin-bottom: 1.5rem;">
+              <div class="skill-info" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; color: #fff; font-weight: 500;">
+                <span>Liderazgo y voz de mando</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bg" style="background: rgba(255, 255, 255, 0.1); border-radius: 4px; height: 6px; width: 100%;">
+                <div class="progress-bar dinamic-bar" data-width="95%" style="background: #00f2c9; height: 100%; border-radius: 4px; width: 0%;"></div>
+              </div>
+            </div>
+            
           </div>
 
         </div>
@@ -218,19 +258,55 @@
 
           <!-- Timeline -->
           <div class="timeline">
-            {% for item in trayectoria %}
+            
             <div
-              class="timeline-item animate-box {{ loop.cycle('left', 'right') }}"
+              class="timeline-item animate-box left"
             >
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <span class="timeline-year">{{ item.periodo }}</span>
-                <h3 class="club-title">{{ item.club }}</h3>
-                <p class="league-info">{{ item.liga }}</p>
-                <p class="role-desc">{{ item.descripcion }}</p>
+                <span class="timeline-year">2011 - 2012</span>
+                <h3 class="club-title">Talleres de Córdoba</h3>
+                <p class="league-info">Argentino A</p>
+                <p class="role-desc"></p>
               </div>
             </div>
-            {% endfor %}
+            
+            <div
+              class="timeline-item animate-box right"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2012</span>
+                <h3 class="club-title">Atletico Policial de Catamarca</h3>
+                <p class="league-info">Argentino B</p>
+                <p class="role-desc"></p>
+              </div>
+            </div>
+            
+            <div
+              class="timeline-item animate-box left"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2013</span>
+                <h3 class="club-title">Sport Club Pacífico de General Alvear</h3>
+                <p class="league-info">Argentino B</p>
+                <p class="role-desc"></p>
+              </div>
+            </div>
+            
+            <div
+              class="timeline-item animate-box right"
+            >
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2014 - 2026</span>
+                <h3 class="club-title">Sportivo Belgrano La Para</h3>
+                <p class="league-info">Liga Regional de Fútbol San Francisco</p>
+                <p class="role-desc"></p>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -246,18 +322,11 @@
 
           <div class="video-container-wrapper animate-box">
             <div class="video-container">
-              <iframe 
-            src="https://www.youtube-nocookie.com/embed/{{ video_id }}" 
-            title="{{ titulo_video }}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen 
-            referrerpolicy="strict-origin-when-cross-origin">
-           </iframe>
+              <iframe src="https://www.youtube.com/embed/5qMEgNy-_zM" title="Video del jugador" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="video-info text-center">
-              <h3>{{ titulo_video }}</h3>
-              <p>{{ descripcion_video }}</p>
+              <h3>Mejores jugadas</h3>
+              <p>Revisá mis movimientos defensivos, anticipaciones, proyecciones y juego aéreo en partidos oficiales.</p>
             </div>
           </div>
         </div>
@@ -286,12 +355,12 @@
                 Hablemos directamente para propuestas deportivas inmediatas.
               </p>
               <a
-                  href="https://wa.me/{{ whatsapp }}?text=Hola,%20vi%20tu%20sitio%20web%20y%20me%20gustaría%20ponerme%20en%20contacto%20vos."
+                  href="https://wa.me/549XXXXXXXXXX?text=Hola,%20vi%20tu%20sitio%20web%20y%20me%20gustaría%20ponerme%20en%20contacto%20vos."
                   target="_blank"
                   rel="noopener noreferrer"
                   class="contact-link whatsapp-btn"
                 >
-                  <i data-lucide="message-square"></i> WhatsApp: {{ whatsapp }}
+                  <i data-lucide="message-square"></i> WhatsApp: 549XXXXXXXXXX
                 </a>
             </div>
 
@@ -317,7 +386,7 @@
                 Seguí mi día a día, entrenamientos y novedades futbolísticas.
               </p>
               <a
-                  href="https://instagram.com/{{ instagram }}"
+                  href="https://instagram.com/arielcordoba9"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="contact-link instagram-btn"
@@ -338,7 +407,7 @@
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                   </svg>
-                  @{{ instagram }}
+                  @arielcordoba9
                 </a>
             </div>
           </div>
