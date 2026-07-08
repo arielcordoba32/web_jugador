@@ -121,6 +121,7 @@ jugadores = [
         "nacionalidad": "Argentina",
         "posicion": "Arquero",
         "segunda_posicion": "",
+        "descripcion_compartir": "Sitio web oficial de Damián Pascal - Arquero con gran presencia física y reflejos rápidos. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
         "atributos_claves": [
             {"nombre": "Reflejos Rápidos", "porcentaje": "92%"},
