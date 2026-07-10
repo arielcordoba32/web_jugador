@@ -139,6 +139,54 @@ jugadores = [
         ],
         "whatsapp": "3575402853",
         "instagram": "damipascal"
+    },
+    {
+        "slug": "sergio-ortopan",
+        "nombre_jugador": "Sergio Ortopan",
+        "foto_perfil": "sergio_ortopan.jpeg",
+        "iniciales": "SO",
+        "numero_camiseta": "17",
+        "video_id": "c6zT2LCrbWc",
+        "titulo_video": "Mejores Jugadas",
+        "descripcion_video": "Compilado de las mejores jugadas de Sergio Ortopan.",
+        "descripcion_personal": "Defensor central con gran solidez defensiva y posición táctica, destacándose por su anticipación, potencia y capacidad para sumarse al ataque.",
+        # --- Datos Nuevos que agregamos a la ficha ---
+        "edad": "24 años",
+        "altura": "1.78 m",
+        "peso": "77 kg",
+        "perfil_habil": "Derecho",
+        "fecha_nacimiento": "17/03/2002",
+        "nacionalidad": "Argentina",
+        "posicion": "Defensor Central Derecho",
+        "segunda_posicion": "Central Izq / Lateral Der",
+        "descripcion_compartir": "Sitio web oficial de Sergio Ortopan - Central con gran solidez defenciva y posición táctica. Trayectoria, estadísticas y contacto.",
+        "club_actual": "Sportivo Belgrano",
+        "atributos_claves": [
+            {"nombre": "Velocidad", "porcentaje": "92%"},
+            {"nombre": "Juego Aéreo", "porcentaje": "85%"},
+            {"nombre": "Anticipación", "porcentaje": "88%"},
+            {"nombre": "Potencia y despliegue", "porcentaje": "95%"},
+            {"nombre": "Defensa", "porcentaje": "90%"}
+        ],
+        "trayectoria": [
+            {
+                "periodo": "2023 - 2026",
+                "club": "Sportivo Belgrano La Para",
+                "liga": "Liga Regional de Fútbol San Francisco",
+            },
+            {
+                "periodo": "2021 - 2023",
+                "club": "Deportivo Maipú de Mendoza",
+                "liga": "Liga Mendocina de Fútbol",
+            },
+            {
+                "periodo": "2010 - 2021",
+                "club": "Instituto Atlético Central Córdoba",
+                "liga": "Inferiores AFA",
+            },
+        ],
+        "whatsapp": "3575406316",
+        "instagram": "sergioortopan02"
     }
 ]
 
