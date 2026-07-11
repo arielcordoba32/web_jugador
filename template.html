@@ -77,8 +77,10 @@
               <div class="card-inner">
                 <div class="card-top">
                   <div class="card-meta">
-                    <span class="card-rating">{{ edad }}</span>
-                    <span class="card-pos">DF</span>
+                    <span class="card-rating">
+                      {{ edad }}<span style="font-size: 0.45em; display: block; line-height: 1; margin-top: 2px; text-transform: uppercase;">Años</span>
+                      </span>
+                    <span class="card-pos">{{ posicion }}</span>
                   </div>
                   <div class="card-player-pic">
                     <img 
@@ -218,19 +220,33 @@
 
           <!-- Timeline -->
           <div class="timeline">
-            {% for item in trayectoria %}
-            <div
-              class="timeline-item animate-box {{ loop.cycle('left', 'right') }}"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">{{ item.periodo }}</span>
-                <h3 class="club-title">{{ item.club }}</h3>
-                <p class="league-info">{{ item.liga }}</p>
-                <p class="role-desc">{{ item.descripcion }}</p>
-              </div>
-            </div>
-            {% endfor %}
+            <!-- Sección de Trayectoria (Bucle Jinja2) -->
+{% for item in trayectoria %}
+    <div class="timeline-item animate-box {{ loop.cycle('left', 'right') }}" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">{{ item.periodo }}</span>
+            <h3 class="club-title">{{ item.club }}</h3>
+            <p class="league-info">{{ item.liga }}</p>
+            <p class="role-desc">{{ item.descripcion }}</p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        {% if item.escudo %}
+            {% if loop.cycle('left', 'right') == 'left' %}
+                <!-- Si la tarjeta va a la izquierda, el escudo va a la derecha con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+            {% else %}
+                <!-- Si la tarjeta va a la derecha, el escudo va a la izquierda con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; right: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+            {% endif %}
+        {% endif %}
+
+    </div>
+{% endfor %}
           </div>
         </div>
       </section>

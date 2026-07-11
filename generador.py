@@ -15,14 +15,14 @@ jugadores = [
         "descripcion_video": "Revisá mis movimientos defensivos, anticipaciones, proyecciones y juego aéreo en partidos oficiales.",
         "descripcion_personal": "Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.",
         # --- Datos Nuevos que agregamos a la ficha ---
-        "edad": "36 años",
-        "altura": "1.78 m",
-        "peso": "76 kg",
+        "edad": "36",
+        "altura": "1.75 m",
+        "peso": "78 kg",
         "perfil_habil": "Izquierdo",
         "fecha_nacimiento": "03/03/1990",
         "nacionalidad": "Argentina",
-        "posicion": "Defensor Central",
-        "segunda_posicion": "Lateral Izquierdo",
+        "posicion": "Lateral Izquierdo",
+        "segunda_posicion": "Central Izquierdo",
         "club_actual": "Sportivo Belgrano La Para",
         "atributos_claves": [
             {"nombre": "Marcación e intercepción", "porcentaje": "90%"},
@@ -33,27 +33,31 @@ jugadores = [
         ],
         "trayectoria": [
             {
-                "periodo": "2011 - 2012",
-                "club": "Talleres de Córdoba",
-                "liga": "Argentino A",
-            },
-            {
-                "periodo": "2012",
-                "club": "Atletico Policial de Catamarca",
-                "liga": "Argentino B",
+                "periodo": "2014 - 2026",
+                "club": "Sportivo Belgrano La Para",
+                "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "sp_belgrano.png"
             },
             {
                 "periodo": "2013",
                 "club": "Sport Club Pacífico de General Alvear",
                 "liga": "Argentino B",
+                "escudo": "pacifico_gral_alvear.png"
             },
             {
-                "periodo": "2014 - 2026",
-                "club": "Sportivo Belgrano La Para",
-                "liga": "Liga Regional de Fútbol San Francisco",
+                "periodo": "2012",
+                "club": "Atletico Policial de Catamarca",
+                "liga": "Argentino B",
+                "escudo": "atletico_policial.png"
+            },
+            {
+                "periodo": "2011 - 2012",
+                "club": "Talleres de Córdoba",
+                "liga": "Argentino A",
+                "escudo": "talleres.png"
             }
         ],
-        "whatsapp": "549XXXXXXXXXX",
+        "whatsapp": "5493575417481",
         "instagram": "arielcordoba9"
     },
     {
@@ -67,7 +71,7 @@ jugadores = [
         "descripcion_video": "Compilado de recuperaciones de balón, marcas individuales, coberturas y juego aéreo.",
         "descripcion_personal": "Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.",
         # --- Datos Nuevos que agregamos a la ficha ---
-        "edad": "28 años",
+        "edad": "28",
         "altura": "1.82 m",
         "peso": "79 kg",
         "perfil_habil": "Derecha",
@@ -87,16 +91,19 @@ jugadores = [
                 "periodo": "2004 - 2010",
                 "club": "Formación Juvenil",
                 "liga": "Divisiones Inferiores",
+                "escudo": ""
             },
             {
                 "periodo": "2011 - 2020",
                 "club": "Torneos Regionales",
                 "liga": "Liga Regional",
+                "escudo": ""
             },
             {
                 "periodo": "2021 - Act.",
                 "club": "San Lorenzo (Amateur)",
                 "liga": "Primera Amateur",
+                "escudo": ""
             }
         ],
         "whatsapp": "549XXXXXXXXXX",
@@ -113,11 +120,11 @@ jugadores = [
         "descripcion_video": "Compilado de atajadas, penales y juego con los pies de la última temporada.",
         "descripcion_personal": "Como arquero con gran presencia física y reflejos rápidos, me destaco por mi seguridad bajo los tres palos, el dominio del área chica y una excelente comunicación para ordenar la línea defensiva.",
         # --- Datos Nuevos que agregamos a la ficha ---
-        "edad": "42 años",
+        "edad": "42",
         "altura": "1.85 m",
         "peso": "81 kg",
         "perfil_habil": "Derecho",
-        "fecha_nacimiento": "29/12/1981",
+        "fecha_nacimiento": "29/12/1983",
         "nacionalidad": "Argentina",
         "posicion": "Arquero",
         "segunda_posicion": "",
@@ -135,6 +142,7 @@ jugadores = [
                 "periodo": "2001 - 2026",
                 "club": "Sportivo Belgrano La Para",
                 "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "sp_belgrano.png"
             },
         ],
         "whatsapp": "3575402853",
@@ -143,7 +151,7 @@ jugadores = [
     {
         "slug": "sergio-ortopan",
         "nombre_jugador": "Sergio Ortopan",
-        "foto_perfil": "sergio_ortopan.jpeg",
+        "foto_perfil": "sergio_ortopan.png",
         "iniciales": "SO",
         "numero_camiseta": "17",
         "video_id": "c6zT2LCrbWc",
@@ -151,14 +159,14 @@ jugadores = [
         "descripcion_video": "Compilado de las mejores jugadas de Sergio Ortopan.",
         "descripcion_personal": "Defensor central con gran solidez defensiva y posición táctica, destacándose por su anticipación, potencia y capacidad para sumarse al ataque.",
         # --- Datos Nuevos que agregamos a la ficha ---
-        "edad": "24 años",
+        "edad": "24",
         "altura": "1.78 m",
         "peso": "77 kg",
         "perfil_habil": "Derecho",
         "fecha_nacimiento": "17/03/2002",
         "nacionalidad": "Argentina",
-        "posicion": "Defensor Central Derecho",
-        "segunda_posicion": "Central Izq / Lateral Der",
+        "posicion": "Defensor Central",
+        "segunda_posicion": "Lateral Derecho",
         "descripcion_compartir": "Sitio web oficial de Sergio Ortopan - Central con gran solidez defenciva y posición táctica. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
         "atributos_claves": [
@@ -173,16 +181,19 @@ jugadores = [
                 "periodo": "2023 - 2026",
                 "club": "Sportivo Belgrano La Para",
                 "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "sp_belgrano.png"
             },
             {
                 "periodo": "2021 - 2023",
                 "club": "Deportivo Maipú de Mendoza",
                 "liga": "Liga Mendocina de Fútbol",
+                "escudo": "deportivo_maipu.png"
             },
             {
                 "periodo": "2010 - 2021",
                 "club": "Instituto Atlético Central Córdoba",
                 "liga": "Inferiores AFA",
+                "escudo": "instituto_cba.png"
             },
         ],
         "whatsapp": "3575406316",

@@ -51,7 +51,7 @@
             <div class="badge">Disponible para Fichaje</div>
             <h1 class="hero-title">Ariel Córdoba</h1>
             <p class="hero-subtitle">
-              <span>Defensor Central | Lateral Izquierdo</span>
+              <span>Lateral Izquierdo | Central Izquierdo</span>
             </p>
             <p class="hero-desc">
               <p style="margin-bottom: 2rem;">Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.</p>
@@ -77,8 +77,10 @@
               <div class="card-inner">
                 <div class="card-top">
                   <div class="card-meta">
-                    <span class="card-rating">36 años</span>
-                    <span class="card-pos">DF</span>
+                    <span class="card-rating">
+                      36<span style="font-size: 0.45em; display: block; line-height: 1; margin-top: 2px; text-transform: uppercase;">Años</span>
+                      </span>
+                    <span class="card-pos">Lateral Izquierdo</span>
                   </div>
                   <div class="card-player-pic">
                     <img 
@@ -92,15 +94,15 @@
                 <div class="card-details">
                   <div class="card-stat">
                     <span class="stat-lbl">EDAD</span>
-                    <span class="stat-val">36 años</span>
+                    <span class="stat-val">36</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">ALT</span>
-                    <span class="stat-val">1.78 m</span>
+                    <span class="stat-val">1.75 m</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">PESO</span>
-                    <span class="stat-val">76 kg</span>
+                    <span class="stat-val">78 kg</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">PERFIL</span>
@@ -119,29 +121,29 @@
           <div class="stat-box animate-box">
             <i data-lucide="user"></i>
             <div class="stat-info">
-              <h3>36 años Años</h3>
+              <h3>36 Años</h3>
               <p>Edad (03/03/1990)</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="ruler"></i>
             <div class="stat-info">
-              <h3>1.78 m</h3>
+              <h3>1.75 m</h3>
               <p>Estatura</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="scale"></i>
             <div class="stat-info">
-              <h3>76 kg</h3>
+              <h3>78 kg</h3>
               <p>Peso Corporal</p>
             </div>
           </div>
           <div class="stat-box animate-box">
             <i data-lucide="navigation"></i>
             <div class="stat-info">
-              <h3>Defensor Central</h3>
-              <p>Lateral Izquierdo</p>
+              <h3>Lateral Izquierdo</h3>
+              <p>Central Izquierdo</p>
             </div>
           </div>
         </div>
@@ -169,10 +171,10 @@
                 <strong>Nacionalidad:</strong> Argentina
               </div>
               <div class="info-item">
-                <strong>Posición Principal:</strong> Defensor Central
+                <strong>Posición Principal:</strong> Lateral Izquierdo
               </div>
               <div class="info-item">
-                <strong>Posición Secundaria:</strong> Lateral Izquierdo
+                <strong>Posición Secundaria:</strong> Central Izquierdo
               </div>
               <div class="info-item">
                 <strong>Perfil hábil:</strong> Izquierdo
@@ -258,55 +260,96 @@
 
           <!-- Timeline -->
           <div class="timeline">
+            <!-- Sección de Trayectoria (Bucle Jinja2) -->
+
+    <div class="timeline-item animate-box left" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">2014 - 2026</span>
+            <h3 class="club-title">Sportivo Belgrano La Para</h3>
+            <p class="league-info">Liga Regional de Fútbol San Francisco</p>
+            <p class="role-desc"></p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        
             
-            <div
-              class="timeline-item animate-box left"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">2011 - 2012</span>
-                <h3 class="club-title">Talleres de Córdoba</h3>
-                <p class="league-info">Argentino A</p>
-                <p class="role-desc"></p>
-              </div>
-            </div>
+                <!-- Si la tarjeta va a la izquierda, el escudo va a la derecha con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('sp_belgrano.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
             
-            <div
-              class="timeline-item animate-box right"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">2012</span>
-                <h3 class="club-title">Atletico Policial de Catamarca</h3>
-                <p class="league-info">Argentino B</p>
-                <p class="role-desc"></p>
-              </div>
-            </div>
+        
+
+    </div>
+
+    <div class="timeline-item animate-box right" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">2013</span>
+            <h3 class="club-title">Sport Club Pacífico de General Alvear</h3>
+            <p class="league-info">Argentino B</p>
+            <p class="role-desc"></p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        
             
-            <div
-              class="timeline-item animate-box left"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">2013</span>
-                <h3 class="club-title">Sport Club Pacífico de General Alvear</h3>
-                <p class="league-info">Argentino B</p>
-                <p class="role-desc"></p>
-              </div>
-            </div>
+                <!-- Si la tarjeta va a la derecha, el escudo va a la izquierda con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; right: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('pacifico_gral_alvear.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
             
-            <div
-              class="timeline-item animate-box right"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">2014 - 2026</span>
-                <h3 class="club-title">Sportivo Belgrano La Para</h3>
-                <p class="league-info">Liga Regional de Fútbol San Francisco</p>
-                <p class="role-desc"></p>
-              </div>
-            </div>
+        
+
+    </div>
+
+    <div class="timeline-item animate-box left" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">2012</span>
+            <h3 class="club-title">Atletico Policial de Catamarca</h3>
+            <p class="league-info">Argentino B</p>
+            <p class="role-desc"></p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        
             
+                <!-- Si la tarjeta va a la izquierda, el escudo va a la derecha con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('atletico_policial.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+            
+        
+
+    </div>
+
+    <div class="timeline-item animate-box right" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">2011 - 2012</span>
+            <h3 class="club-title">Talleres de Córdoba</h3>
+            <p class="league-info">Argentino A</p>
+            <p class="role-desc"></p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        
+            
+                <!-- Si la tarjeta va a la derecha, el escudo va a la izquierda con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; right: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('talleres.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+            
+        
+
+    </div>
+
           </div>
         </div>
       </section>
@@ -362,12 +405,12 @@
                 Hablemos directamente para propuestas deportivas inmediatas.
               </p>
               <a
-                  href="https://wa.me/549XXXXXXXXXX?text=Hola,%20vi%20tu%20sitio%20web%20y%20me%20gustaría%20ponerme%20en%20contacto%20vos."
+                  href="https://wa.me/5493575417481?text=Hola,%20vi%20tu%20sitio%20web%20y%20me%20gustaría%20ponerme%20en%20contacto%20vos."
                   target="_blank"
                   rel="noopener noreferrer"
                   class="contact-link whatsapp-btn"
                 >
-                  <i data-lucide="message-square"></i> WhatsApp: 549XXXXXXXXXX
+                  <i data-lucide="message-square"></i> WhatsApp: 5493575417481
                 </a>
             </div>
 

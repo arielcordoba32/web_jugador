@@ -77,8 +77,10 @@
               <div class="card-inner">
                 <div class="card-top">
                   <div class="card-meta">
-                    <span class="card-rating">42 años</span>
-                    <span class="card-pos">DF</span>
+                    <span class="card-rating">
+                      42<span style="font-size: 0.45em; display: block; line-height: 1; margin-top: 2px; text-transform: uppercase;">Años</span>
+                      </span>
+                    <span class="card-pos">Arquero</span>
                   </div>
                   <div class="card-player-pic">
                     <img 
@@ -92,7 +94,7 @@
                 <div class="card-details">
                   <div class="card-stat">
                     <span class="stat-lbl">EDAD</span>
-                    <span class="stat-val">42 años</span>
+                    <span class="stat-val">42</span>
                   </div>
                   <div class="card-stat">
                     <span class="stat-lbl">ALT</span>
@@ -119,8 +121,8 @@
           <div class="stat-box animate-box">
             <i data-lucide="user"></i>
             <div class="stat-info">
-              <h3>42 años Años</h3>
-              <p>Edad (29/12/1981)</p>
+              <h3>42 Años</h3>
+              <p>Edad (29/12/1983)</p>
             </div>
           </div>
           <div class="stat-box animate-box">
@@ -163,7 +165,7 @@
             
             <div class="personal-info-list" style="margin-top: 20px;">
               <div class="info-item">
-                <strong>Nacimiento:</strong> 29/12/1981
+                <strong>Nacimiento:</strong> 29/12/1983
               </div>
               <div class="info-item">
                 <strong>Nacionalidad:</strong> Argentina
@@ -258,19 +260,30 @@
 
           <!-- Timeline -->
           <div class="timeline">
+            <!-- Sección de Trayectoria (Bucle Jinja2) -->
+
+    <div class="timeline-item animate-box left" style="position: relative; overflow: visible;">
+        
+        <div class="timeline-dot"></div>
+        
+        <!-- Tarjeta del Club (Contenido de texto - Lado 'A') -->
+        <div class="timeline-content">
+            <span class="timeline-year">2001 - 2026</span>
+            <h3 class="club-title">Sportivo Belgrano La Para</h3>
+            <p class="league-info">Liga Regional de Fútbol San Francisco</p>
+            <p class="role-desc"></p>
+        </div>
+
+        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        
             
-            <div
-              class="timeline-item animate-box left"
-            >
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-year">2001 - 2026</span>
-                <h3 class="club-title">Sportivo Belgrano La Para</h3>
-                <p class="league-info">Liga Regional de Fútbol San Francisco</p>
-                <p class="role-desc"></p>
-              </div>
-            </div>
+                <!-- Si la tarjeta va a la izquierda, el escudo va a la derecha con color completo -->
+                <div class="club-crest-background" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('sp_belgrano.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
             
+        
+
+    </div>
+
           </div>
         </div>
       </section>
