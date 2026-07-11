@@ -25,6 +25,7 @@ jugadores = [
         "segunda_posicion": "Central Izquierdo",
         "descripcion_compartir": "Lateral izquierdo con gran versatilidad táctica. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano La Para",
+        "escudo_actual": "sp_belgrano.png",  # <-- Agregá esta línea con el nombre exacto de su archivo
         "atributos_claves": [
             {"nombre": "Marcación e intercepción", "porcentaje": "90%"},
             {"nombre": "Lectura táctica / Anticipación", "porcentaje": "88%"},
@@ -81,6 +82,7 @@ jugadores = [
         "posicion": "Defensor Central",
         "segunda_posicion": "No aplica",
         "club_actual": "Agente Libre",
+        "escudo_actual": " ",
         "atributos_claves": [
             {"nombre": "Anticipación oportuna", "porcentaje": "92%"},
             {"nombre": "Cobertura sólida", "porcentaje": "85%"},
@@ -131,6 +133,7 @@ jugadores = [
         "segunda_posicion": "",
         "descripcion_compartir": "Arquero con gran presencia física y reflejos rápidos. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
+        "escudo_actual": "sp_belgrano.png",
         "atributos_claves": [
             {"nombre": "Reflejos Rápidos", "porcentaje": "92%"},
             {"nombre": "Juego Aéreo Seguro", "porcentaje": "85%"},
@@ -170,6 +173,7 @@ jugadores = [
         "segunda_posicion": "Lateral Derecho",
         "descripcion_compartir": "Central con gran solidez defensiva y posición táctica. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
+        "escudo_actual": "sp_belgrano.png",
         "atributos_claves": [
             {"nombre": "Velocidad", "porcentaje": "92%"},
             {"nombre": "Juego Aéreo", "porcentaje": "85%"},
