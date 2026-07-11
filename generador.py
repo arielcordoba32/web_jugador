@@ -33,6 +33,12 @@ jugadores = [
             {"nombre": "Proyección y centros", "porcentaje": "85%"},
             {"nombre": "Liderazgo y voz de mando", "porcentaje": "95%"},
         ],
+        # Adentro de los datos del jugador en generador.py
+        "galeria": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg"  # Podés poner 2, 3 o 4 archivos de imagen
+        ],
         "trayectoria": [
             {
                 "periodo": "2014 - 2026",
@@ -89,6 +95,12 @@ jugadores = [
             {"nombre": "Juego físico", "porcentaje": "88%"},
             {"nombre": "Salida limpia", "porcentaje": "95%"},
         ],
+        # Adentro de los datos del jugador en generador.py
+        "galeria": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg"  # Podés poner 2, 3 o 4 archivos de imagen
+        ],
         "trayectoria": [
             {
                 "periodo": "2004 - 2010",
@@ -141,6 +153,12 @@ jugadores = [
             {"nombre": "Penales", "porcentaje": "95%"},
             {"nombre": "Seguridad bajo los Tres Palos", "porcentaje": "90%"}
         ],
+        # Adentro de los datos del jugador en generador.py
+        "galeria": [
+            "foto1.jpg",
+            "foto2.jpg",
+            "foto3.jpg"  # Podés poner 2, 3 o 4 archivos de imagen
+        ],
         "trayectoria": [
             {
                 "periodo": "2001 - 2026",
@@ -180,6 +198,12 @@ jugadores = [
             {"nombre": "Anticipación", "porcentaje": "88%"},
             {"nombre": "Potencia y despliegue", "porcentaje": "95%"},
             {"nombre": "Defensa", "porcentaje": "90%"}
+        ],
+        "galeria": [
+            "sergio1.jpeg",
+            "sergio2.jpeg",
+            "sergio2.jpeg",
+            "sergio1.jpeg",
         ],
         "trayectoria": [
             {

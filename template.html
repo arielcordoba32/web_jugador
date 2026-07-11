@@ -43,6 +43,7 @@
     </header>
 
     <main>
+
       <!-- Hero Section -->
       <section id="inicio" class="hero">
         <div class="hero-bg-overlay"></div>
@@ -153,6 +154,42 @@
         </div>
       </section>
 
+            <!-- Sección Galería de Fotos Estilo CR7 -->
+{% if galeria and galeria|length > 0 %}
+<section id="galeria" class="gallery-section" style="background-color: #0d1117; padding: 60px 0;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        
+        <div class="gallery-grid" style="display: flex; gap: 15px; width: 100%; height: 500px; overflow: hidden; border-radius: 12px;">
+            
+            {% for foto in galeria %}
+            <div class="gallery-item" style="flex: 1; height: 100%; transition: all 0.4s ease; position: relative; cursor: pointer;">
+                <img src="{{ foto }}" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
+                
+                <!-- Efecto de sombreado sutil al pasar el mouse -->
+                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease;"></div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Efecto visual interactivo al pasar el mouse (Opcional, le da el toque premium) -->
+<style>
+    .gallery-item:hover {
+        flex: 1.4 !important; /* La foto que miras se agranda un poquito a lo ancho */
+    }
+    .gallery-item:hover img {
+        transform: scale(1.05); /* Zoom sutil a la imagen */
+    }
+    .gallery-item:hover .gallery-overlay {
+        opacity: 0.2; /* Se aclara la foto al enfocarla */
+    }
+</style>
+{% endif %}
+
+
       <!-- About Section -->
       <section id="sobre-mi" class="about-section" style="padding-bottom: 40px !important;">
         <div class="container">
@@ -238,14 +275,14 @@
             <p class="role-desc">{{ item.descripcion }}</p>
         </div>
 
-        <!-- Escudo de Fondo (Lado 'B' - Vacío, con color y tamaño de recuadro) -->
+        <!-- Escudo Ajustable (Limpio para que VS Code no tire error) -->
         {% if item.escudo %}
             {% if loop.cycle('left', 'right') == 'left' %}
-                <!-- Si la tarjeta va a la izquierda, el escudo va a la derecha con color completo -->
-                <div class="club-crest-background" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+                <!-- Lado Izquierdo (Escudo a la derecha) -->
+                <div class="timeline-crest" style="position: absolute; top: 50%; left: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; pointer-events: none; z-index: 1;"></div>
             {% else %}
-                <!-- Si la tarjeta va a la derecha, el escudo va a la izquierda con color completo -->
-                <div class="club-crest-background" style="position: absolute; top: 50%; right: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 1; z-index: 1; pointer-events: none;"></div>
+                <!-- Lado Derecho (Escudo a la izquierda) -->
+                <div class="timeline-crest" style="position: absolute; top: 50%; right: 110%; transform: translateY(-50%); width: 160px; height: 160px; background-image: url('{{ item.escudo }}'); background-size: contain; background-repeat: no-repeat; background-position: center; pointer-events: none; z-index: 1;"></div>
             {% endif %}
         {% endif %}
 
