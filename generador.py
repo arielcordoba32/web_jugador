@@ -23,6 +23,7 @@ jugadores = [
         "nacionalidad": "Argentina",
         "posicion": "Lateral Izquierdo",
         "segunda_posicion": "Central Izquierdo",
+        "descripcion_compartir": "Lateral izquierdo con gran versatilidad táctica. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano La Para",
         "atributos_claves": [
             {"nombre": "Marcación e intercepción", "porcentaje": "90%"},
@@ -128,7 +129,7 @@ jugadores = [
         "nacionalidad": "Argentina",
         "posicion": "Arquero",
         "segunda_posicion": "",
-        "descripcion_compartir": "Sitio web oficial de Damián Pascal - Arquero con gran presencia física y reflejos rápidos. Trayectoria, estadísticas y contacto.",
+        "descripcion_compartir": "Arquero con gran presencia física y reflejos rápidos. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
         "atributos_claves": [
             {"nombre": "Reflejos Rápidos", "porcentaje": "92%"},
@@ -167,7 +168,7 @@ jugadores = [
         "nacionalidad": "Argentina",
         "posicion": "Defensor Central",
         "segunda_posicion": "Lateral Derecho",
-        "descripcion_compartir": "Sitio web oficial de Sergio Ortopan - Central con gran solidez defenciva y posición táctica. Trayectoria, estadísticas y contacto.",
+        "descripcion_compartir": "Central con gran solidez defensiva y posición táctica. Trayectoria, estadísticas y contacto.",
         "club_actual": "Sportivo Belgrano",
         "atributos_claves": [
             {"nombre": "Velocidad", "porcentaje": "92%"},
