@@ -35,9 +35,10 @@ jugadores = [
         ],
         # Adentro de los datos del jugador en generador.py
         "galeria": [
-            "foto1.jpg",
-            "foto2.jpg",
-            "foto3.jpg"  # Podés poner 2, 3 o 4 archivos de imagen
+            "ariel1.png",
+            "ariel2.png",
+            "ariel3.png",
+            "ariel4.png" # Podés poner 2, 3 o 4 archivos de imagen
         ],
         "trayectoria": [
             {
