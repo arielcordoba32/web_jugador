@@ -5,6 +5,53 @@ from jinja2 import Environment, FileSystemLoader
 # # Lista de datos de los jugadores
 jugadores = [
     {
+        "slug": "AACC",
+        "nombre_jugador": "Ariel Córdoba",
+        "foto_perfil": "profile.png",
+        "iniciales": "AC",
+        "numero_camiseta": "3",
+        "video_id": "iKopVYHMYYM",
+        "titulo_video": "Mejores jugadas",
+        "descripcion_video": "Revisá mis movimientos defensivos, anticipaciones, proyecciones y juego aéreo en partidos oficiales.",
+        "descripcion_personal": "Como defensor con amplia experiencia, me destaco por mi versatilidad táctica, mi sentido de la ubicación, velocidad de anticipación y salida limpia por bajo.",
+        # --- Datos Nuevos que agregamos a la ficha ---
+        "edad": "36",
+        "altura": "1.75 m",
+        "peso": "78 kg",
+        "perfil_habil": "Izquierdo",
+        "fecha_nacimiento": "03/03/1990",
+        "nacionalidad": "Argentina",
+        "posicion": "Lateral Izquierdo",
+        "segunda_posicion": "Central Izquierdo",
+        "descripcion_compartir": "Lateral izquierdo con gran versatilidad táctica. Trayectoria, estadísticas y contacto.",
+        "club_actual": "Sportivo Belgrano La Para",
+        "escudo_actual": "sp_belgrano.png",  # <-- Agregá esta línea con el nombre exacto de su archivo
+        "atributos_claves": [
+            {"nombre": "Marcación e intercepción", "porcentaje": "90%"},
+            {"nombre": "Lectura táctica / Anticipación", "porcentaje": "88%"},
+            {"nombre": "Juego aéreo", "porcentaje": "82%"},
+            {"nombre": "Proyección y centros", "porcentaje": "85%"},
+            {"nombre": "Liderazgo y voz de mando", "porcentaje": "95%"},
+        ],
+        # Adentro de los datos del jugador en generador.py
+        "galeria": [
+            "ariel1.png",
+            "ariel2.png",
+            "ariel3.png",
+            "ariel4.png" # Podés poner 2, 3 o 4 archivos de imagen
+        ],
+        "trayectoria": [
+            {
+                "periodo": "2014 - 2026",
+                "club": "Sportivo Belgrano La Para",
+                "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "sp_belgrano.png"
+            },
+        ],
+        "whatsapp": "",
+        "instagram": ""
+    },
+    {
         "slug": "ariel-cordoba",
         "nombre_jugador": "Ariel Córdoba",
         "foto_perfil": "profile.png",
