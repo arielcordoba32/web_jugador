@@ -202,8 +202,8 @@ jugadores = [
         "galeria": [
             "sergio1.jpeg",
             "sergio2.jpeg",
-            "sergio2.jpeg",
-            "sergio1.jpeg",
+            "sergio3.png",
+            "sergio4.png",
         ],
         "trayectoria": [
             {

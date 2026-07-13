@@ -161,31 +161,31 @@
             
             
             <div class="gallery-item" style="flex: 1; height: 100%; transition: all 0.4s ease; position: relative; cursor: pointer;">
-                <img src="sergio1.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
+                <img onclick="abrirFoto('sergio1.jpeg')" src="sergio1.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
                 
                 <!-- Efecto de sombreado sutil al pasar el mouse -->
-                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease;"></div>
+                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease; pointer-events: none;"></div>
             </div>
             
             <div class="gallery-item" style="flex: 1; height: 100%; transition: all 0.4s ease; position: relative; cursor: pointer;">
-                <img src="sergio2.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
+                <img onclick="abrirFoto('sergio2.jpeg')" src="sergio2.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
                 
                 <!-- Efecto de sombreado sutil al pasar el mouse -->
-                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease;"></div>
+                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease; pointer-events: none;"></div>
             </div>
             
             <div class="gallery-item" style="flex: 1; height: 100%; transition: all 0.4s ease; position: relative; cursor: pointer;">
-                <img src="sergio2.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
+                <img onclick="abrirFoto('sergio3.png')" src="sergio3.png" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
                 
                 <!-- Efecto de sombreado sutil al pasar el mouse -->
-                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease;"></div>
+                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease; pointer-events: none;"></div>
             </div>
             
             <div class="gallery-item" style="flex: 1; height: 100%; transition: all 0.4s ease; position: relative; cursor: pointer;">
-                <img src="sergio1.jpeg" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
+                <img onclick="abrirFoto('sergio4.png')" src="sergio4.png" alt="Foto del jugador" style="width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease;">
                 
                 <!-- Efecto de sombreado sutil al pasar el mouse -->
-                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease;"></div>
+                <div class="gallery-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.7)); opacity: 0.5; transition: opacity 0.4s ease; pointer-events: none;"></div>
             </div>
             
 
@@ -193,6 +193,41 @@
 
     </div>
 </section>
+
+<!-- PANTALLA FLOTANTE PARA VER LA FOTO COMPLETA (Lightbox) -->
+<div id="lightbox-modal" style="
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    align-items: center; 
+    justify-content: center;
+    cursor: zoom-out;
+">
+    <!-- Botón para cerrar (X) -->
+    <span style="
+        position: absolute; 
+        top: 20px; 
+        right: 30px; 
+        color: #fff; 
+        font-size: 40px; 
+        font-weight: bold; 
+        cursor: pointer;
+    " onclick="cerrarFoto()">&times;</span>
+    
+    <!-- Imagen que se va a agrandar -->
+    <img id="lightbox-img" src="" alt="Foto ampliada" style="
+        max-width: 90%; 
+        max-height: 85%; 
+        object-fit: contain; 
+        border-radius: 6px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    ">
+</div>
 
 <!-- Efecto visual interactivo al pasar el mouse (Opcional, le da el toque premium) -->
 <style>
