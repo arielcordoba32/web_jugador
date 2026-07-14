@@ -315,7 +315,7 @@ jugadores = [
             {
                 "periodo": "2024 - 2026",
                 "club": "9 de Julio de Morteros",
-                "liga": "Regional Amateur | Liga Regional de Fútbol San Francisco",
+                "liga": "Liga Regional de Fútbol San Francisco | Regional Amateur",
                 "escudo": "9_de_julio_morteros.png"
             },
             {
