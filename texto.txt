@@ -1,0 +1,58 @@
+{
+        "slug": "",
+        "nombre_jugador": "",
+        "foto_perfil": "",
+        "iniciales": "",
+        "numero_camiseta": "",
+        "video_id": "",
+        "titulo_video": "",
+        "descripcion_video": "",
+        "descripcion_personal": "",
+        # --- Datos Nuevos que agregamos a la ficha ---
+        "edad": "",
+        "altura": "",
+        "peso": "",
+        "perfil_habil": "",
+        "fecha_nacimiento": "",
+        "nacionalidad": "Argentina",
+        "posicion": "",
+        "segunda_posicion": "",
+        "descripcion_compartir": "",
+        "club_actual": "",
+        "escudo_actual": "",
+        "atributos_claves": [
+            {"nombre": "Velocidad", "porcentaje": "92%"},
+            {"nombre": "Juego Aéreo", "porcentaje": "85%"},
+            {"nombre": "Anticipación", "porcentaje": "88%"},
+            {"nombre": "Potencia y despliegue", "porcentaje": "95%"},
+            {"nombre": "Defensa", "porcentaje": "90%"}
+        ],
+        "galeria": [
+            "",
+            "",
+            "",
+            "",
+        ],
+        "trayectoria": [
+            {
+                "periodo": "",
+                "club": "",
+                "liga": "",
+                "escudo": ""
+            },
+            {
+                "periodo": "",
+                "club": "",
+                "liga": "",
+                "escudo": ""
+            },
+            {
+                "periodo": "",
+                "club": "",
+                "liga": "",
+                "escudo": ""
+            },
+        ],
+        "whatsapp": "",
+        "instagram": ""
+    }

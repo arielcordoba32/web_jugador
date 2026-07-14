@@ -275,6 +275,70 @@ jugadores = [
         ],
         "whatsapp": "3575406316",
         "instagram": "sergioortopan02"
+    },
+    {
+        "slug": "lionel-bolatti",
+        "nombre_jugador": "Lionel Bolatti",
+        "foto_perfil": "lio_bolatti.png",
+        "iniciales": "LB",
+        "numero_camiseta": "10",
+        "video_id": "4fYuJTQEpXU",
+        "titulo_video": "Mejores Jugadas",
+        "descripcion_video": "Compilado de las mejores jugadas de Lionel Bolatti.",
+        "descripcion_personal": "Jugador creativo y versátil, con gran visión de juego y capacidad para generar oportunidades de gol. Destacado por su técnica, control de balón y explosividad en el campo.",
+        # --- Datos Nuevos que agregamos a la ficha ---
+        "edad": "25",
+        "altura": "1.74 m",
+        "peso": "68 kg",
+        "perfil_habil": "Izquierdo",
+        "fecha_nacimiento": "05/11/2000",
+        "nacionalidad": "Argentina",
+        "posicion": "Media Punta",
+        "segunda_posicion": "Volante Int. | Extremo Der. | Falso 9",
+        "descripcion_compartir": "Media punta con gran visión de juego y capacidad para generar oportunidades de gol. Trayectoria, estadísticas y contacto.",
+        "club_actual": "9 De Julio de Morteros",
+        "escudo_actual": "9_de_julio_morteros.png",
+        "atributos_claves": [
+            {"nombre": "VIsión de Juego", "porcentaje": "92%"},
+            {"nombre": "Técnica", "porcentaje": "85%"},
+            {"nombre": "Presión", "porcentaje": "90%"},
+            {"nombre": "Explosividad", "porcentaje": "87%"},
+            {"nombre": "Control de Balón", "porcentaje": "90%"}
+        ],
+        "galeria": [
+            "lio1.jpeg",
+            "lio2.jpeg",
+            "lio3.jpeg",
+            "lio4.jpeg",
+        ],
+        "trayectoria": [
+            {
+                "periodo": "2024 - 2026",
+                "club": "9 de Julio de Morteros",
+                "liga": "Regional Amateur",
+                "escudo": "9_de_julio_morteros.png"
+            },
+            {
+                "periodo": "2022 - 2023",
+                "club": "San Jorge de Brinkmann",
+                "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "san_jorge_brinkmann.png"
+            },
+            {
+                "periodo": "2018 - 2022",
+                "club": "Sportivo Belgrano La Para",
+                "liga": "Liga Regional de Fútbol San Francisco",
+                "escudo": "sp_belgrano.png"
+            },
+            {
+                "periodo": "2015 - 2017",
+                "club": "Club Atlético Belgrano de Córdoba",
+                "liga": "Liga Cordobesa de Fútbol / Inferiores AFA",
+                "escudo": "belgrano_cordoba.png"
+            },
+        ],
+        "whatsapp": "5493575404465",
+        "instagram": "lionelbolatti"
     }
 ]
 
