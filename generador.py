@@ -315,7 +315,7 @@ jugadores = [
             {
                 "periodo": "2024 - 2026",
                 "club": "9 de Julio de Morteros",
-                "liga": "Regional Amateur",
+                "liga": "Regional Amateur | Liga Regional de Fútbol San Francisco",
                 "escudo": "9_de_julio_morteros.png"
             },
             {
@@ -333,7 +333,7 @@ jugadores = [
             {
                 "periodo": "2015 - 2017",
                 "club": "Club Atlético Belgrano de Córdoba",
-                "liga": "Liga Cordobesa de Fútbol / Inferiores AFA",
+                "liga": "Liga Cordobesa de Fútbol | Inferiores AFA",
                 "escudo": "belgrano_cordoba.png"
             },
         ],
